@@ -3,10 +3,10 @@ from weibo import APIClient
 import datetime
 import time
 
-APP_KEY = '766583035'
-APP_SECRET = 'b2234b5d983dac176a1e81bc059eccbd'
+APP_KEY = '' #Your app key
+APP_SECRET = '' #Your app secret
 
-CALLBACK_URL = 'http://127.0.0.1:8000'
+CALLBACK_URL = '' # call back url
 
 client = APIClient(app_key=APP_KEY, app_secret=APP_SECRET, redirect_uri=CALLBACK_URL)
 url = client.get_authorize_url()
